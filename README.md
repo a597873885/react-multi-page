@@ -29,23 +29,23 @@ npm run build
     |──src/                                 
     |     |
     |     |
-    |     |—— containers/                  
-    |     |      |—— index/                     * 页面代码
-    |     |      |        |—— main.js            * 入口文件
+    |     |—— modules/                  
+    |     |      |—— home/                     * 页面代码
+    |     |      |        |—— index.js            * 入口文件
     |     |      |
     |     |      |—— detail/                    * 页面代码
-    |     |      |        |—— main.js            * 入口文件
+    |     |      |        |—— index.js            * 入口文件
     |     |
-    |     |—— static/                           * 静态文件js，css
+    |     |—— assets/                           * 静态文件js，css
     |
-    |──webpack.base.js                          *webpack公共配置文件
+    |──webpack.config.base.js                          *webpack公共配置文件
     |──webpack.config.build.js                  * 发布版本使用的webpack配置文件
     |──webpack.config.dev.js                    * 调试版本使用的webpack配置文件
     |__.babelrc                                 * babel配置文件
     |__.eslintrc                                 * eslint
 ```
-* main.js是每个页面的入口文件，必须有,containers中的文件名就是生成的页面名字;
+* index.js是每个页面的入口文件，必须有,modules中的文件名就是生成的页面名字;
 
-* static文件夹webpack默认不打包;
+* assets文件夹webpack默认不打包;
 
-* dev中index.html是默认html模版文件
+* src中index.html是默认html模版文件
